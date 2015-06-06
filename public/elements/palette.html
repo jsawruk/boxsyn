@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="bs-palette">
+  <template>
+    <div id="palette">
+      <h2>Palette</h2>
+      <button on-click="{{insertClick}}" data-type="keymap">Keymap</button>
+      <button on-click="{{insertClick}}" data-type="osc">Osc</button>
+      <button on-click="{{insertClick}}" data-type="gain">Gain</button>
+      <button on-click="{{insertClick}}" data-type="out">Out</button>
+    </div>
+  </template>
+
+  <script>
+  Polymer({
+    insertClick: function(event, detail, sender) {
+
+      // Get the current palette type
+      var boxType = sender.getAttribute("data-type");
+      boxsyn.insertBoxType = boxType;
+
+      boxsyn.startInsert();
+    }
+  });
+  </script>
+
+</polymer-element>

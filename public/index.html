@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>boxsyn</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="webcomponentsjs/webcomponents.js"></script>
+  <script src="jsPlumb/dist/js/dom.jsPlumb-1.7.5-min.js"></script>
+
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
+  <script src="js/boxsyn.js"></script>
+  <script src="js/boxsyn.plumb.js"></script>
+
+  <script>
+  jsPlumb.ready(function() {
+    boxsyn.init();
+  });
+  </script>
+
+  <!-- Polymer elements -->
+  <link rel="import" href="elements/palette.html">
+
+</head>
+<body>
+
+  <div class="container">
+    boxsyn
+
+    <!-- Palette -->
+    <bs-palette></bs-palette>
+
+    <!-- Main Box -->
+    <div id="mainbox">
+    </div>
+
+    <!-- Box UI -->
+
+  </div>
+
+</body>
+</html>

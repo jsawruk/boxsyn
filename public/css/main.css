@@ -1,0 +1,33 @@
+body {
+  margin: 20px;
+}
+
+#mainbox {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-top: 5px;
+  background: #f9f9f9;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+#mainbox.insert {
+  cursor: crosshair;
+}
+
+.box {
+  border: 1px solid #346789;
+  width: 80px;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 8px;
+  position: absolute;
+  cursor: default;
+}
+
+bs-canvas.insert {
+  cursor: crosshair;
+}
